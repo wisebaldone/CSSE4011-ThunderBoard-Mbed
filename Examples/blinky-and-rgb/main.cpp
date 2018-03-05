@@ -16,15 +16,20 @@ int main() {
 	printf("Hello world, this is me, life should be, fun for everyone!\n");
     
 	while (true) {
-    	if (count == 0) {
+		if (count == 0) {
     		rgbs::set(2, 0, 0);
     	} else if (count == 1) {
     		rgbs::set(0, 2, 0);
     	} else if (count == 2) {
     		rgbs::set(0, 0, 2);
-    		count = 0;
     	}
-    	count++; 
+
+		if(count == 2) {
+			count  = 0;
+		} else {
+			count++;
+		}
+
 	    led1 = !led1;
 		printf(":horsie:\n");
 	    wait(0.25);
