@@ -1,0 +1,7 @@
+.build
+.mbed
+projectfiles
+*.py*
+
+# Ignore the sensor
+AMS_CCS811_gas_sensor

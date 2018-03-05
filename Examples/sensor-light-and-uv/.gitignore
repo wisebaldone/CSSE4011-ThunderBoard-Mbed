@@ -1,0 +1,7 @@
+.build
+.mbed
+projectfiles
+*.py*
+
+# Ignore the sensor
+Si1133
