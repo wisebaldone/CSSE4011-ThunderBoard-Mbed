@@ -10,16 +10,16 @@ int main() {
 	int count = 0;
 
 	rgbs::enable();
-	rgbs::init(0b1111);
+	rgbs::led_enable(0b1111);
 	rgbs::set(0, 0, 7);
     
 	while (true) {
     	if (count == 0) {
-    		setLEDS(2, 0, 0);
+    		rgbs::set(2, 0, 0);
     	} else if (count == 1) {
-    		setLEDS(0, 2, 0);
+    		rgbs::set(0, 2, 0);
     	} else if (count == 2) {
-    		setLEDS(0, 0, 2);
+    		rgbs::set(0, 0, 2);
     		count = 0;
     	}
     	count++; 
