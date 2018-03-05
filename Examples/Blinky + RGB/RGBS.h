@@ -1,5 +1,9 @@
 //#include "mbed.h"
 
-
-void init_leds(bool LED1, bool LED2, bool LED3, bool LED4);
-void setLEDS(int red, int green, int blue);
+namespace rgbs {
+    void enable();
+    void disable();
+    void led_enable(int enables);
+    void set(int red, int blue, int green);
+    void set_hex(long hex);
+}

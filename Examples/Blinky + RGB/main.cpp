@@ -8,9 +8,12 @@ DigitalIn btn(BUTTON1);
 // main() runs in its own thread in the OS
 int main() {
 	int count = 0;
-	init_leds(1,1,1,1);
-	setLEDS(0, 0, 7);
-    while (true) {
+
+	rgbs::enable();
+	rgbs::init(0b1111);
+	rgbs::set(0, 0, 7);
+    
+	while (true) {
     	if (count == 0) {
     		setLEDS(2, 0, 0);
     	} else if (count == 1) {
