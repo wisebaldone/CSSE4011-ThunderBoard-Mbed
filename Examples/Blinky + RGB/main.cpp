@@ -4,6 +4,7 @@
 DigitalOut led1(LED4);
 
 DigitalIn btn(BUTTON1);
+
 // main() runs in its own thread in the OS
 int main() {
 	int count = 0;
