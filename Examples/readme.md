@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. Ensure you have the `mbed-client` installed.
+1. Ensure you have the `mbed-cli` installed.
 2. clone down this repo and cd into the example folder you wish to use
 3. run `mbed deploy` to fetch the missing dependencies
 
