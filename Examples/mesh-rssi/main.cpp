@@ -21,7 +21,7 @@
 #include "mbedtls/entropy_poll.h"
 #include "mbed.h"
 #include "easy-connect/easy-connect.h"
-#include "mesh_led_control_example.h"
+#include "nanostack/whiteboard_api.h"
 
 // Entry point to the program
 int main() {
@@ -41,5 +41,12 @@ int main() {
         return -1;
     }
 
-    start_mesh_led_control_example(network);
+    while(1) {
+
+        whiteboard_entry_t* bobby = whiteboard_get(NULL);
+
+        printf("IP Address of other: %d\n", bobby;
+
+        wait(1);
+    }
 }

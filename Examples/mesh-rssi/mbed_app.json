@@ -15,8 +15,7 @@
             "target.features_add": ["NANOSTACK", "COMMON_PAL"],
             "nanostack.configuration": "thread_router",
             "platform.stdio-convert-newlines": true,
-            "mbed-mesh-api.6lowpan-nd-channel-page": 0,
-            "mbed-mesh-api.6lowpan-nd-channel": 12
+            "mbed-mesh-api.thread-config-channel" : 18
         }
     }
 }
